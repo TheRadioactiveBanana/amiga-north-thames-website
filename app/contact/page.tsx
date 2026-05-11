@@ -21,7 +21,7 @@ export default function ContactPage(){
                     ))}
                 </div>
             ) : (
-                <div className="text-6xl text-red-500 text-shadow-red-800">
+                <div className="text-6xl text-red-500">
                     <h1>
                         No contact emails configured.
                     </h1>

@@ -16,7 +16,7 @@ export function Large3Images({gallery}: Large3ImagesProps){
                         >
                             <Image
                                 src={src}
-                                alt="Placeholder cat"
+                                alt={`Gallery image ${i + 1}`}
                                 width={800}
                                 height={600}
                                 className="w-full h-full object-cover"

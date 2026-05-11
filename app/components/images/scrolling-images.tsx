@@ -10,7 +10,7 @@ export function ScrollingImages(){
                         <Image
                             key={i}
                             src="https://placecats.com/300/150"
-                            alt="Placeholder cat"
+                            alt="Scrolling gallery image"
                             width={300}
                             height={150}
                             className="rounded-lg shrink-0 w-75 h-37.5"
@@ -23,7 +23,7 @@ export function ScrollingImages(){
                         <Image
                             key={i}
                             src="https://placecats.com/300/150"
-                            alt="Placeholder cat"
+                            alt="Scrolling gallery image"
                             width={300}
                             height={150}
                             className="rounded-lg shrink-0 w-75 h-37.5"

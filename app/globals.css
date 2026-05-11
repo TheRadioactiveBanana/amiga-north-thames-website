@@ -37,6 +37,12 @@
     animation-play-state: paused;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .animate-marquee-left {
+        animation: none;
+    }
+}
+
 body {
     background: #050505;
     color: var(--color-text-primary);

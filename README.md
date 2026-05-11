@@ -105,7 +105,7 @@ ant-website/
 │   ├── favicon.ico
 │   ├── logo-inverted.png         # Group logo
 │   ├── image-1.png               # Gallery image (others fall back)
-│   └── meeting.gif               # Animated footer decoration
+│   └── writing.gif               # Animated footer decoration of quality most excellent
 ├── events.yml                    # Upcoming meeting dates
 ├── who-are-we.txt                # Group description text
 ├── .env / .env.example           # Environment configuration

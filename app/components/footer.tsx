@@ -14,15 +14,15 @@ export function Footer(){
                     <Image
                         width={64}
                         height={64}
-                        src="/meeting.gif"
+                        src="/writing.gif"
                         alt="Amiga North Thames meeting"
                         className="inline-block rounded-sm"
                         unoptimized
                     />
-                    <a>
+                    <div>
                        <p>Credits: Ashley Byte</p>
                        <p>Direction: thingEE, V100</p>
-                    </a>
+                    </div>
                 </div>
                 <div className="flex items-center justify-center gap-4">
                     {links.map((link) => (

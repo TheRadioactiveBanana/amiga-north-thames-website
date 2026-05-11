@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: "Amiga North Thames is a computer user group, based in North East London (U.K.) which was started back in January 1999.",
 };
 
-export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>){
+export default function RootLayout({children}: Readonly<{ children: React.ReactNode }>){
     return (
         <html lang="en" className={`${geistSans.variable} ${geistMono.variable} w-full h-full antialiased`}>
             <body className="min-h-full flex flex-col">
