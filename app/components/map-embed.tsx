@@ -9,12 +9,12 @@ export function MapEmbed(){
 
     return (
         <section className="border-t border-surface-border">
-            <div className="mx-auto max-w-5xl px-6 py-24">
-                <h2 className="text-center text-2xl font-semibold text-text-primary">
+            <div className="mx-auto max-w-6xl px-6 py-24">
+                <h2 className="text-center text-3xl font-bold text-text-primary">
                     Where are we?
                 </h2>
                 <div
-                    className="mx-auto mt-8 max-w-2xl group rounded-xl overflow-hidden aspect-4/3 ring-1 ring-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_4px_rgba(96,165,250,0.3)]">
+                    className="mx-auto mt-8 max-w-4xl group rounded-xl overflow-hidden aspect-4/3 ring-1 ring-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_4px_rgba(96,165,250,0.3)]">
                     <iframe
                         title="Meeting location"
                         src={`https://maps.google.com/maps?q=${lat},${lng}&z=15&output=embed`}

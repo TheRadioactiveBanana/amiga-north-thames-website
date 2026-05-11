@@ -8,14 +8,23 @@ interface EventItem {
     text: string;
 }
 
+function ordinalSuffix(day: number): string {
+    if(day > 3 && day < 21) return "th";
+    switch(day % 10) {
+        case 1: return "st";
+        case 2: return "nd";
+        case 3: return "rd";
+        default: return "th";
+    }
+}
+
 function formatDate(dateStr: string): string{
     const d = new Date(dateStr);
     if(isNaN(d.getTime())) return dateStr;
-    return d.toLocaleDateString("en-GB", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-    });
+    const day = d.getDate();
+    const month = d.toLocaleDateString("en-GB", {month: "long"});
+    const year = d.getFullYear();
+    return `${day}${ordinalSuffix(day)} of ${month}, ${year}`;
 }
 
 async function getEvents(): Promise<EventItem[]>{
@@ -51,13 +60,15 @@ export async function HeroSection(){
                     className="shrink-0"
                 />
                 {events.length > 0 && (
-                    <div className="flex flex-col gap-2">
+                    <div className="grid grid-cols-[auto_1fr] gap-x-2 gap-y-2 items-baseline">
                         {events.map((event, i) => (
-                            <p key={i} className="text-text-secondary text-sm">
-                <span className="text-text-primary font-medium">
-                  {formatDate(event.date)}
-                </span>{" "}
-                                &mdash; {event.text}
+                            <p key={i} className="contents text-sm">
+                                <span className="text-text-primary font-medium text-right">
+                                    {formatDate(event.date)}
+                                </span>
+                                <span className="text-text-secondary">
+                                    &mdash; {event.text}
+                                </span>
                             </p>
                         ))}
                     </div>
