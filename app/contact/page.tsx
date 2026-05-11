@@ -36,11 +36,11 @@ export default function ContactPage(){
                                 />
                             </svg>
                             <span className="text-sm font-medium text-text-primary">
-                {email}
-                </span>
+                                {email}
+                            </span>
                             <span className="ml-auto">
-                    <CopyButton text={email}/>
-                </span>
+                                <CopyButton text={email}/>
+                            </span>
                         </div>
                     ))}
                 </div>
