@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {HeroSection} from "./components/hero-section";
 import {MapEmbed} from "./components/map-embed";
-import {WhoWeAre} from "./components/who-we-are";
+import {WhoAreWe} from "./components/who-are-we";
 
 export default async function HomePage(){
     return (
@@ -39,7 +39,7 @@ export default async function HomePage(){
                 </div>
             </section>
 
-            <WhoWeAre/>
+            <WhoAreWe/>
             <MapEmbed/>
 
             <div className="mx-auto mt-8 max-w-md rounded-xl overflow-hidden border border-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(96,165,250,0.35)]">
