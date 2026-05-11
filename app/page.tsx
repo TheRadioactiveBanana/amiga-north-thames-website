@@ -50,22 +50,22 @@ export default async function HomePage(){
                         <p>We meet up once a month and discuss, demonstrate, build, game and repair our old machines. We
                             also arrange head to head or multi-player gaming sessions this could be from anything from
                             Stunt Car Racer, Sensible Soccer, and Skidmarks right up to Freespace 2 and beyond.</p>
-                        <p>Got a Classic Amiga and want to upgrade or repair it? Want to try or install the latest CaffeineOS or AmigaOS?
+                        <p>Got a Classic Amiga and want to upgrade or repair it? Want to try or install the latest
+                            CaffeineOS or AmigaOS?
                             Want to show off your latest build or work on something together?
                             whatever it is bring it along and set it up! </p>
 
                         <p>Amiga North Thames remains the U.K.&#39;s longest running and most successful Amiga
                             enthusiast group covering London and the South-East. We offer a warm welcome to anybody who
                             prefers computing with all the fun that Windows took away. Admittance is free for your first
-                            meeting, thereafter it is £8.00 per meeting. There are no membership fees</p>
+                            meeting, thereafter it is £8.00 per meeting. Meetings start at 13:00 and last 4 hours.
+                            There are no membership fees</p>
                     </div>
                 </div>
             </section>
-
             <MapEmbed/>
 
-            <div
-                className="mx-auto mt-8 max-w-md rounded-xl overflow-hidden border border-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(96,165,250,0.35)]">
+            <div className="mx-auto mt-8 max-w-md rounded-xl overflow-hidden border border-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(96,165,250,0.35)]">
                 <Image
                     src="https://placecats.com/400/300"
                     alt="Placeholder cat"
@@ -75,8 +75,7 @@ export default async function HomePage(){
                 />
             </div>
 
-            <div
-                className="mx-auto mt-8 max-w-md rounded-xl overflow-hidden border border-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(96,165,250,0.35)]">
+            <div className="mx-auto mt-8 max-w-md rounded-xl overflow-hidden border border-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(96,165,250,0.35)]">
                 <Image
                     width={400}
                     height={300}
