@@ -152,7 +152,7 @@ The following environment variables, prefixed with `NEXT_PUBLIC_` for client-sid
 | `NEXT_PUBLIC_MAP_LAT` | Latitude for map centre | `51.5763` |
 | `NEXT_PUBLIC_MAP_LNG` | Longitude for map centre | `-0.0107` |
 | `NEXT_PUBLIC_ADDRESS` | Meeting venue address | `The Venue Name, Street, Postcode` |
-| `NEXT_PUBLIC_CONTACT_EMAILS` | Comma-separated contact emails | `person@example.org,other@example.org` |
+| `NEXT_PUBLIC_CONTACT_EMAILS` | Comma-separated contact emails | `secretary@example.org.uk,enquiries@example.org.uk` |
 
 A template is provided in `.env.example`.
 

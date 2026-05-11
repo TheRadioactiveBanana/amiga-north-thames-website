@@ -1,7 +1,7 @@
 import {HeroSection} from "./components/hero-section";
-import {Large3Images} from "./components/large-3-images";
-import {MapEmbed} from "./components/map-embed";
-import {ScrollingImages} from "./components/scrolling-images";
+import {Large3Images} from "./components/images/large-3-images";
+import {MapEmbed} from "./components/map/map-embed";
+import {ScrollingImages} from "./components/images/scrolling-images";
 import {WhoAreWe} from "./components/who-are-we";
 import {getGallerySrc} from "./lib/gallery";
 

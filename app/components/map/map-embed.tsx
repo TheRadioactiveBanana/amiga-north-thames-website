@@ -1,4 +1,4 @@
-import {CopyButton} from "./copy-button";
+import {CopyButton} from "../misc/copy-button";
 
 export function MapEmbed(){
     const lat = process.env.NEXT_PUBLIC_MAP_LAT;

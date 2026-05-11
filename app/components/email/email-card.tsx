@@ -1,4 +1,4 @@
-import {CopyButton} from "./copy-button";
+import {CopyButton} from "../misc/copy-button";
 import {EmailIcon} from "./email-icon";
 
 interface EmailCardProps {

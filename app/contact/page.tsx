@@ -1,4 +1,4 @@
-import {EmailCard} from "../components/email-card";
+import {EmailCard} from "../components/email/email-card";
 
 export default function ContactPage(){
     const emails = (process.env.NEXT_PUBLIC_CONTACT_EMAILS ?? "")

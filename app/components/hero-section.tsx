@@ -1,50 +1,5 @@
 import Image from "next/image";
-import {readFile} from "fs/promises";
-import {join} from "path";
-import yaml from "js-yaml";
-
-interface EventItem {
-    date: string;
-    text: string;
-}
-
-function ordinalSuffix(day: number): string {
-    if(day > 3 && day < 21) return "th";
-    switch(day % 10) {
-        case 1: return "st";
-        case 2: return "nd";
-        case 3: return "rd";
-        default: return "th";
-    }
-}
-
-function formatDate(dateStr: string): string{
-    const d = new Date(dateStr);
-    if(isNaN(d.getTime())) return dateStr;
-    const day = d.getDate();
-    const month = d.toLocaleDateString("en-GB", {month: "long"});
-    const year = d.getFullYear();
-    return `${day}${ordinalSuffix(day)} of ${month}, ${year}`;
-}
-
-async function getEvents(): Promise<EventItem[]>{
-    try{
-        const fileContents = await readFile(join(process.cwd(), "events.yml"), "utf-8");
-        const parsed = yaml.load(fileContents);
-        if(!Array.isArray(parsed)) return [];
-        return parsed
-            .filter(
-                (item: unknown): item is Record<string, string> =>
-                    typeof item === "object" && item !== null && "date" in item && "text" in item
-            )
-            .map((item) => ({
-                date: String(item.date),
-                text: String(item.text),
-            }));
-    }catch{
-        return [];
-    }
-}
+import {formatDate, getEvents} from "@/app/lib/events";
 
 export async function HeroSection(){
     const events = await getEvents();
