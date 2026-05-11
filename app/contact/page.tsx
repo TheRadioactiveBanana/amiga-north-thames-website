@@ -38,7 +38,7 @@ export default function ContactPage(){
                             <span className="text-sm font-medium text-text-primary">
                 {email}
                 </span>
-                <span className="ml-auto">
+                            <span className="ml-auto">
                     <CopyButton text={email}/>
                 </span>
                         </div>

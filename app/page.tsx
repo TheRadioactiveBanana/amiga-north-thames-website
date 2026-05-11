@@ -42,7 +42,8 @@ export default async function HomePage(){
             <WhoAreWe/>
             <MapEmbed/>
 
-            <div className="mx-auto mt-8 max-w-md rounded-xl overflow-hidden border border-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(96,165,250,0.35)]">
+            <div
+                className="mx-auto mt-8 max-w-md rounded-xl overflow-hidden border border-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(96,165,250,0.35)]">
                 <Image
                     src="https://placecats.com/400/300"
                     alt="Placeholder cat"
@@ -52,7 +53,8 @@ export default async function HomePage(){
                 />
             </div>
 
-            <div className="mx-auto mt-8 max-w-md rounded-xl overflow-hidden border border-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(96,165,250,0.35)]">
+            <div
+                className="mx-auto mt-8 max-w-md rounded-xl overflow-hidden border border-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(96,165,250,0.35)]">
                 <Image
                     width={400}
                     height={300}

@@ -1,15 +1,15 @@
 import {readFile} from "fs/promises";
 import {join} from "path";
 
-async function getWhoAreWeText(): Promise<string> {
-    try {
+async function getWhoAreWeText(): Promise<string>{
+    try{
         return await readFile(join(process.cwd(), "who-are-we.txt"), "utf-8");
-    } catch {
+    }catch{
         return "";
     }
 }
 
-export async function WhoAreWe() {
+export async function WhoAreWe(){
     const text = await getWhoAreWeText();
 
     return (
