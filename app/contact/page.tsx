@@ -7,21 +7,21 @@ export default function ContactPage(){
         .filter(Boolean);
 
     return (
-        <section className="mx-auto max-w-3xl px-6 py-24">
-            <h1 className="text-center text-2xl font-semibold text-text-primary">
+        <section className="mx-auto max-w-3xl px-4 md:px-6 py-12 md:py-24">
+            <h1 className="text-center text-xl md:text-2xl font-semibold text-text-primary">
                 Get in touch
             </h1>
             <p className="mx-auto mt-3 max-w-xl text-center text-text-secondary">
                 Reach out to us at any of the addresses below.
             </p>
             {emails.length > 0 ? (
-                <div className="mt-12 grid gap-4">
+                <div className="mt-8 md:mt-12 grid gap-3 md:gap-4">
                     {emails.map((email) => (
                         <EmailCard key={email} email={email} />
                     ))}
                 </div>
             ) : (
-                <div className="text-6xl text-red-500">
+                <div className="text-4xl md:text-6xl text-red-500">
                     <h1>
                         No contact emails configured.
                     </h1>

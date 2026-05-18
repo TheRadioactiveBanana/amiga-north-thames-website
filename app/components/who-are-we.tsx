@@ -14,11 +14,11 @@ export async function WhoAreWe(){
 
     return (
         <section className="border-t border-surface-border">
-            <div className="mx-auto max-w-6xl px-6 py-24">
-                <h2 className="text-center text-3xl font-bold text-text-primary">
+            <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-24">
+                <h2 className="text-center text-2xl md:text-3xl font-bold text-text-primary">
                     Who Are We?
                 </h2>
-                <div className="mx-auto mt-8 max-w-4xl text-sm text-text-secondary leading-relaxed whitespace-pre-wrap">
+                <div className="mx-auto mt-6 md:mt-8 max-w-4xl text-sm text-text-secondary leading-relaxed whitespace-pre-wrap">
                     {text}
                 </div>
             </div>

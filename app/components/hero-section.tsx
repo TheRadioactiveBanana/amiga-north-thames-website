@@ -5,14 +5,14 @@ export async function HeroSection(){
     const events = await getEvents();
 
     return (
-        <section className="flex items-center justify-center py-8">
-            <div className="flex items-center gap-12">
+        <section className="flex items-center justify-center py-4 md:py-8 px-4">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
                 <Image
                     src="/logo-inverted.png"
                     alt="Amiga North Thames"
                     width={400}
                     height={300}
-                    className="shrink-0"
+                    className="shrink-0 w-64 md:w-80 lg:w-96 h-auto"
                 />
                 {events.length > 0 && (
                     <div className="grid grid-cols-[auto_1fr] gap-x-2 gap-y-2 items-baseline">

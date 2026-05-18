@@ -9,13 +9,13 @@ export function MapEmbed(){
 
     return (
         <section className="border-t border-surface-border">
-            <div className="mx-auto max-w-6xl px-6 py-24">
-                <h2 className="text-center text-3xl font-bold text-text-primary">
+            <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-24">
+                <h2 className="text-center text-2xl md:text-3xl font-bold text-text-primary">
                     Where are we?
                 </h2>
                 {mapConfigured ? (
                     <div
-                        className="mx-auto mt-8 max-w-4xl group rounded-xl overflow-hidden aspect-4/3 ring-1 ring-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_4px_rgba(96,165,250,0.3)]">
+                        className="mx-auto mt-6 md:mt-8 max-w-4xl group rounded-xl overflow-hidden aspect-4/3 ring-1 ring-surface-border transition-shadow duration-300 hover:shadow-[0_0_24px_4px_rgba(96,165,250,0.3)]">
                         <iframe
                             title="Meeting location"
                             src={`https://maps.google.com/maps?q=${lat},${lng}&z=15&output=embed`}
@@ -29,14 +29,14 @@ export function MapEmbed(){
                         />
                     </div>
                 ) : (
-                    <p className="mx-auto mt-8 max-w-2xl text-center text-text-secondary">
+                    <p className="mx-auto mt-6 md:mt-8 max-w-2xl text-center text-text-secondary">
                         The meeting location is not presently configured.
                         Please contact us for directions.
                     </p>
                 )}
                 {address && (
-                    <div className="mx-auto mt-6 flex max-w-2xl items-center justify-center gap-3">
-                        <p className="text-lg font-bold text-text-primary">{address}</p>
+                    <div className="mx-auto mt-4 md:mt-6 flex max-w-2xl items-center justify-center gap-3">
+                        <p className="text-base md:text-lg font-bold text-text-primary">{address}</p>
                         <CopyButton text={address}/>
                     </div>
                 )}

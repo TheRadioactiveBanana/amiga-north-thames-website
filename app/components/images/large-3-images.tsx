@@ -7,8 +7,8 @@ interface Large3ImagesProps {
 export function Large3Images({gallery}: Large3ImagesProps){
     return (
         <section className="border-t border-surface-border">
-            <div className="mx-auto max-w-6xl px-6 py-24">
-                <div className="mt-8 flex flex-col gap-6">
+            <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-24">
+                <div className="mt-4 md:mt-8 flex flex-col gap-4 md:gap-6">
                     {gallery.map((src, i) => (
                         <div
                             key={i}

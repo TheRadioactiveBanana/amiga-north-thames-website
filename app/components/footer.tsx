@@ -9,8 +9,8 @@ const links = [
 export function Footer(){
     return (
         <footer className="mt-auto border-t border-surface-border">
-            <div className="mx-auto grid grid-cols-3 items-center h-16 max-w-full px-6">
-                <div className="flex gap-2 text-sm text-text-muted">
+            <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0 items-center py-6 md:h-16 max-w-full px-4 md:px-6">
+                <div className="flex gap-2 text-sm text-text-muted justify-center md:justify-start">
                     <Image
                         width={64}
                         height={64}
@@ -35,7 +35,7 @@ export function Footer(){
                         </Link>
                     ))}
                 </div>
-                <div className="flex items-center justify-end">
+                <div className="flex items-center justify-center md:justify-end">
                     <a
                         href="https://github.com/TheRadioactiveBanana/amiga-north-thames-website"
                         target="_blank"

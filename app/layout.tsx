@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type {Metadata, Viewport} from "next";
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import {Nav} from "./components/nav";
@@ -18,6 +18,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
     title: "Amiga North Thames",
     description: "Amiga North Thames is a computer user group, based in North East London (U.K.) which was started back in January 1999.",
+};
+
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
 };
 
 export default function RootLayout({children}: Readonly<{ children: React.ReactNode }>){
